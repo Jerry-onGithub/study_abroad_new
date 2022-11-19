@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="fill_parent"
+    tools:context=".homeActivities.FirstActivity">
+    <RelativeLayout
+        android:id="@+id/snack_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true">
+    </RelativeLayout>
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/bottom_nav_menu"
+        android:layout_marginBottom="0dp"
+        android:fillViewport="true">
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/home"
+            android:orientation="vertical"
+            android:paddingBottom="0dp">
+            <!--<include
+                android:id="@+id/toolbar"
+                layout="@layout/toolbar" />-->
+            <LinearLayout
+                android:id="@+id/recent"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:orientation="vertical"
+                android:visibility="gone">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="10dp"
+                    android:layout_marginVertical="6dp"
+                    android:text="Recently viewed"
+                    android:textColor="@color/black"
+                    android:textSize="20sp" />
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/recycler_view_recent"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginVertical="7dp"
+                    android:visibility="visible" />
+            </LinearLayout>
+
+            <androidx.viewpager2.widget.ViewPager2
+                android:layout_marginTop="20dp"
+                android:layout_height="250dp"
+                android:layout_width="match_parent"
+                android:paddingRight="10dp"
+                android:paddingLeft="10dp"
+                android:clipToPadding="false"
+                android:id="@+id/viewPagerImageSlider"
+                android:visibility="gone"/>
+            <androidx.viewpager.widget.ViewPager
+                android:id="@+id/viewPagerMain"
+                android:layout_marginTop="20dp"
+                android:layout_height="250dp"
+                android:layout_width="match_parent"
+                android:clipToPadding="false"
+                android:visibility="gone"/>
+
+            <LinearLayout
+                android:id="@+id/top"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:orientation="vertical"
+                android:visibility="gone">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="10dp"
+                    android:layout_marginVertical="6dp"
+                    android:text="Top universities"
+                    android:textColor="@color/black"
+                    android:textSize="20sp" />
+                <com.bosphere.fadingedgelayout.FadingEdgeLayout
+                    android:id="@+id/fading_edge_layout"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    app:fel_edge="top|left|bottom|right"
+                    app:fel_size_bottom="20dp"
+                    app:fel_size_left="0dp"
+                    app:fel_size_right="0dp"
+                    app:fel_size_top="20dp">
+                    <androidx.recyclerview.widget.RecyclerView
+                        android:id="@+id/recycler_view_top"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:cacheColorHint="#00000000"
+                        android:requiresFadingEdge="horizontal|vertical"
+                        android:visibility="visible" />
+                </com.bosphere.fadingedgelayout.FadingEdgeLayout>
+            </LinearLayout>
+            <LinearLayout
+                android:visibility="gone"
+                android:id="@+id/programs"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:orientation="vertical">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginHorizontal="10dp"
+                        android:layout_marginVertical="6dp"
+                        android:text="Popular departments"
+                        android:textColor="@color/black"
+                        android:textSize="20sp" />
+                    <ImageView
+                        android:id="@+id/reload"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginHorizontal="10dp"
+                        android:layout_marginVertical="6dp"
+                        android:backgroundTint="@color/material_deep_teal_500"
+                        android:paddingTop="7dp"
+                        android:src="@drawable/reload" />
+                </LinearLayout>
+                <RadioGroup
+                    android:id="@+id/radio_group"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_above="@+id/view_below"
+                    android:orientation="horizontal">
+                    <RadioButton
+                        android:id="@+id/engineering"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:checked="true"
+                        android:text="Engineering" />
+                    <RadioButton
+                        android:id="@+id/business"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="Business" />
+                    <RadioButton
+                        android:id="@+id/law"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="Law" />
+                    <RadioButton
+                        android:id="@+id/medicine"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="Medicine" />
+                </RadioGroup>
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/recycler_view_programs"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginVertical="7dp"
+                    android:visibility="visible" />
+            </LinearLayout>
+            <include
+                android:id="@+id/progress_bar"
+                layout="@layout/loading_circular"
+                android:layout_height="match_parent"
+                android:layout_width="match_parent"/>
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+    <include
+        android:id="@+id/bottom_nav_menu"
+        layout="@layout/bottom_navigation_view"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:layout_alignParentBottom="true"/>
+</RelativeLayout>

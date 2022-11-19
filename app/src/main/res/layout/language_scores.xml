@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/toefl_score"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:visibility="visible"
+        android:layout_marginHorizontal="20dp">
+        <com.google.android.material.textfield.TextInputLayout
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginVertical="10dp">
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/t_reading"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="TOEFL Reading Score (0 to 30)" />
+        </com.google.android.material.textfield.TextInputLayout>
+        <com.google.android.material.textfield.TextInputLayout
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginVertical="10dp">
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/t_speaking"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="TOEFL Speaking Score (0 to 30)" />
+        </com.google.android.material.textfield.TextInputLayout>
+        <com.google.android.material.textfield.TextInputLayout
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginVertical="10dp">
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/t_listening"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="TOEFL Listening Score (0 to 30)" />
+        </com.google.android.material.textfield.TextInputLayout>
+        <com.google.android.material.textfield.TextInputLayout
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginVertical="10dp">
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/t_writing"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="TOEFL Writing Score (0 to 30)" />
+        </com.google.android.material.textfield.TextInputLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ielts_score"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:visibility="visible"
+        android:layout_marginHorizontal="20dp">
+        <com.google.android.material.textfield.TextInputLayout
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginVertical="10dp">
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/i_reading"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="IELTS Reading Score (0 to 9)" />
+        </com.google.android.material.textfield.TextInputLayout>
+        <com.google.android.material.textfield.TextInputLayout
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginVertical="10dp">
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/i_speaking"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="IELTS Speaking Score (0 to 9)" />
+        </com.google.android.material.textfield.TextInputLayout>
+        <com.google.android.material.textfield.TextInputLayout
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginVertical="10dp">
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/i_listening"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="IELTS Listening Score (0 to 9)" />
+        </com.google.android.material.textfield.TextInputLayout>
+        <com.google.android.material.textfield.TextInputLayout
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginVertical="10dp">
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/i_writing"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="IELTS Writing Score (0 to 9)" />
+        </com.google.android.material.textfield.TextInputLayout>
+    </LinearLayout>
+</LinearLayout>

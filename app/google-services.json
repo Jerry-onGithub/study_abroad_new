@@ -1,0 +1,68 @@
+{
+  "project_info": {
+    "project_number": "955667782553",
+    "project_id": "study-abroad-65269",
+    "storage_bucket": "study-abroad-65269.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:955667782553:android:97eb559650ddcf8b121108",
+        "android_client_info": {
+          "package_name": "com.ustc.app.studyabroad"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "955667782553-ugv3hcprintjub1jtjkv0dgq38mqqu5d.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCqaTJdJvsBHYtdvQjF_o-tSoOFUMHPz8A"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "955667782553-ugv3hcprintjub1jtjkv0dgq38mqqu5d.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:955667782553:android:5f89532d56576373121108",
+        "android_client_info": {
+          "package_name": "com.ustc.uni.studyabroadapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "955667782553-ugv3hcprintjub1jtjkv0dgq38mqqu5d.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCqaTJdJvsBHYtdvQjF_o-tSoOFUMHPz8A"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "955667782553-ugv3hcprintjub1jtjkv0dgq38mqqu5d.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

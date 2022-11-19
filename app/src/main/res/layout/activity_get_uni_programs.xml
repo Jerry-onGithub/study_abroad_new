@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".activities.GetUniPrograms">
+    <include
+        android:id="@+id/toolbar"
+        layout="@layout/toolbar"/>
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:id="@+id/recycler_view"
+        android:layout_height="wrap_content"
+        tools:listitem="@layout/row_item_uni_programs"
+        android:background="@color/white"
+        android:visibility="gone"/>
+    <include
+        android:id="@+id/progress_bar"
+        layout="@layout/loading_circular"
+        android:layout_gravity="center"
+        android:layout_height="match_parent"
+        android:layout_width="match_parent" />
+</LinearLayout>

@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/sat_score"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:visibility="visible"
+        android:layout_marginHorizontal="20dp">
+        <com.google.android.material.textfield.TextInputLayout
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginVertical="10dp">
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/s_math"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="SAT Math Score (200 to 800)" />
+        </com.google.android.material.textfield.TextInputLayout>
+        <com.google.android.material.textfield.TextInputLayout
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginVertical="10dp">
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/s_reading_writing"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Evidence-Based Reading and Writing (200 - 800)" />
+        </com.google.android.material.textfield.TextInputLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/act_score"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:visibility="visible"
+        android:layout_marginHorizontal="20dp">
+        <com.google.android.material.textfield.TextInputLayout
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginVertical="10dp">
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/a_math"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="ACT Math Score (1 to 36)" />
+        </com.google.android.material.textfield.TextInputLayout>
+        <com.google.android.material.textfield.TextInputLayout
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginVertical="10dp">
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/a_english"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="ACT English Score (1 to 36)" />
+        </com.google.android.material.textfield.TextInputLayout>
+        <com.google.android.material.textfield.TextInputLayout
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginVertical="10dp">
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/a_reading"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="ACT Reading Score (1 to 36)" />
+        </com.google.android.material.textfield.TextInputLayout>
+        <com.google.android.material.textfield.TextInputLayout
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginVertical="10dp">
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/a_science"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="ACT Science Score (1 to 36)" />
+        </com.google.android.material.textfield.TextInputLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/gre_score"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:visibility="visible"
+        android:layout_marginHorizontal="20dp">
+        <com.google.android.material.textfield.TextInputLayout
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginVertical="10dp">
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/g_verbal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="GRE Verbal (130 - 170)" />
+        </com.google.android.material.textfield.TextInputLayout>
+        <com.google.android.material.textfield.TextInputLayout
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginVertical="10dp">
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/g_quantitative"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="GRE Quantitative (130 - 170)" />
+        </com.google.android.material.textfield.TextInputLayout>
+        <com.google.android.material.textfield.TextInputLayout
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginVertical="10dp">
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/g_writing"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="GRE Writing (0 - 6)" />
+        </com.google.android.material.textfield.TextInputLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/gmat_score"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:visibility="visible"
+        android:layout_marginHorizontal="20dp">
+        <com.google.android.material.textfield.TextInputLayout
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginVertical="10dp">
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/gmat_verbal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="GMAT Verbal (0 - 60)" />
+        </com.google.android.material.textfield.TextInputLayout>
+        <com.google.android.material.textfield.TextInputLayout
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginVertical="10dp">
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/gmat_quantitative"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="GMAT Quantitative (0 - 60)" />
+        </com.google.android.material.textfield.TextInputLayout>
+        <com.google.android.material.textfield.TextInputLayout
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginVertical="10dp">
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/gmat_writing"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="GMAT Analytical Writing Assessment (0 - 6)" />
+        </com.google.android.material.textfield.TextInputLayout>
+        <com.google.android.material.textfield.TextInputLayout
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginVertical="10dp">
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/gmat_reasoning"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="GMAT Integrated Reasoning (1 - 8)" />
+        </com.google.android.material.textfield.TextInputLayout>
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="..\:/Users/Jerry/AndroidStudioProjects/downloads/StudyAbroadAPP/app/src/main/res/drawable-v24/alert_dialog.xml" value="0.24010416666666667" />
+        <entry key="..\:/Users/Jerry/AndroidStudioProjects/downloads/StudyAbroadAPP/app/src/main/res/drawable-v24/final_female.xml" value="0.17291666666666666" />
+        <entry key="..\:/Users/Jerry/AndroidStudioProjects/downloads/StudyAbroadAPP/app/src/main/res/drawable-v24/final_male.xml" value="0.18333333333333332" />
+        <entry key="..\:/Users/Jerry/AndroidStudioProjects/downloads/StudyAbroadAPP/app/src/main/res/drawable-v24/gradient_profile.xml" value="0.22685185185185186" />
+        <entry key="..\:/Users/Jerry/AndroidStudioProjects/downloads/StudyAbroadAPP/app/src/main/res/drawable-v24/home.xml" value="0.2364102564102564" />
+        <entry key="..\:/Users/Jerry/AndroidStudioProjects/downloads/StudyAbroadAPP/app/src/main/res/drawable-v24/ic_location_black.xml" value="0.1765625" />
+        <entry key="..\:/Users/Jerry/AndroidStudioProjects/downloads/StudyAbroadAPP/app/src/main/res/drawable-v24/ic_profile.xml" value="0.1625" />
+        <entry key="..\:/Users/Jerry/AndroidStudioProjects/downloads/StudyAbroadAPP/app/src/main/res/drawable-v24/male.xml" value="0.1703125" />
+        <entry key="..\:/Users/Jerry/AndroidStudioProjects/downloads/StudyAbroadAPP/app/src/main/res/drawable-v24/male_final.xml" value="0.1703125" />
+        <entry key="..\:/Users/Jerry/AndroidStudioProjects/downloads/StudyAbroadAPP/app/src/main/res/drawable-v24/rectangle_bg.xml" value="0.11302083333333333" />
+        <entry key="..\:/Users/Jerry/AndroidStudioProjects/downloads/StudyAbroadAPP/app/src/main/res/drawable/abc_btn_borderless_material.xml" value="0.2361111111111111" />
+        <entry key="..\:/Users/Jerry/AndroidStudioProjects/downloads/StudyAbroadAPP/app/src/main/res/drawable/animalion_list.xml" value="0.23055555555555557" />
+        <entry key="..\:/Users/Jerry/AndroidStudioProjects/downloads/StudyAbroadAPP/app/src/main/res/drawable/bg_add_decisions.xml" value="0.12395833333333334" />
+        <entry key="..\:/Users/Jerry/AndroidStudioProjects/downloads/StudyAbroadAPP/app/src/main/res/drawable/bg_add_edit_desicions.xml" value="0.1578125" />
+        <entry key="..\:/Users/Jerry/AndroidStudioProjects/downloads/StudyAbroadAPP/app/src/main/res/drawable/button.xml" value="0.2364102564102564" />
+        <entry key="..\:/Users/Jerry/AndroidStudioProjects/downloads/StudyAbroadAPP/app/src/main/res/drawable/clip.xml" value="0.16458333333333333" />
+        <entry key="..\:/Users/Jerry/AndroidStudioProjects/downloads/StudyAbroadAPP/app/src/main/res/drawable/comment_bg.xml" value="0.196875" />
+        <entry key="..\:/Users/Jerry/AndroidStudioProjects/downloads/StudyAbroadAPP/app/src/main/res/drawable/edittextborder.xml" value="0.22314814814814815" />
+        <entry key="..\:/Users/Jerry/AndroidStudioProjects/downloads/StudyAbroadAPP/app/src/main/res/drawable/final_world.xml" value="0.18333333333333332" />
+        <entry key="..\:/Users/Jerry/AndroidStudioProjects/downloads/StudyAbroadAPP/app/src/main/res/drawable/forgot_pass_ic.xml" value="0.22314814814814815" />
+        <entry key="..\:/Users/Jerry/AndroidStudioProjects/downloads/StudyAbroadAPP/app/src/main/res/drawable/gradient.xml" value="0.19270833333333334" />
+        <entry key="..\:/Users/Jerry/AndroidStudioProjects/downloads/StudyAbroadAPP/app/src/main/res/drawable/ic_favorite.xml" value="0.19479166666666667" />
+        <entry key="..\:/Users/Jerry/AndroidStudioProjects/downloads/StudyAbroadAPP/app/src/main/res/drawable/ic_location.xml" value="0.19270833333333334" />
+        <entry key="..\:/Users/Jerry/AndroidStudioProjects/downloads/StudyAbroadAPP/app/src/main/res/drawable/ic_menu_camera.xml" value="0.16458333333333333" />
+        <entry key="..\:/Users/Jerry/AndroidStudioProjects/downloads/StudyAbroadAPP/app/src/main/res/drawable/image.xml" value="0.24010416666666667" />
+        <entry key="..\:/Users/Jerry/AndroidStudioProjects/downloads/StudyAbroadAPP/app/src/main/res/drawable/logo_home.xml" value="0.17708333333333334" />
+        <entry key="..\:/Users/Jerry/AndroidStudioProjects/downloads/StudyAbroadAPP/app/src/main/res/drawable/my_shape.xml" value="0.22447916666666667" />
+        <entry key="..\:/Users/Jerry/AndroidStudioProjects/downloads/StudyAbroadAPP/app/src/main/res/drawable/progress_bar.xml" value="0.22447916666666667" />
+        <entry key="..\:/Users/Jerry/AndroidStudioProjects/downloads/StudyAbroadAPP/app/src/main/res/drawable/radius_shape.xml" value="0.10364583333333334" />
+        <entry key="..\:/Users/Jerry/AndroidStudioProjects/downloads/StudyAbroadAPP/app/src/main/res/drawable/rank.xml" value="0.2364102564102564" />
+        <entry key="..\:/Users/Jerry/AndroidStudioProjects/downloads/StudyAbroadAPP/app/src/main/res/drawable/rounded_corner.xml" value="0.17604166666666668" />
+        <entry key="..\:/Users/Jerry/AndroidStudioProjects/downloads/StudyAbroadAPP/app/src/main/res/drawable/selector.xml" value="0.21041666666666667" />
+        <entry key="..\:/Users/Jerry/AndroidStudioProjects/downloads/StudyAbroadAPP/app/src/main/res/drawable/spinner_popup.xml" value="0.16822916666666668" />
+        <entry key="..\:/Users/Jerry/AndroidStudioProjects/downloads/StudyAbroadAPP/app/src/main/res/drawable/ucrop_ic_next.xml" value="0.1453125" />
+        <entry key="..\:/Users/Jerry/AndroidStudioProjects/downloads/StudyAbroadAPP/app/src/main/res/drawable/world_final.xml" value="0.16458333333333333" />
+        <entry key="..\:/Users/Jerry/AndroidStudioProjects/downloads/StudyAbroadAPP/app/src/main/res/layout/activity_add_decisions.xml" value="0.15052083333333333" />
+        <entry key="..\:/Users/Jerry/AndroidStudioProjects/downloads/StudyAbroadAPP/app/src/main/res/layout/activity_decisions_admit.xml" value="0.16168478260869565" />
+        <entry key="..\:/Users/Jerry/AndroidStudioProjects/downloads/StudyAbroadAPP/app/src/main/res/layout/activity_edit_profile.xml" value="0.1" />
+        <entry key="..\:/Users/Jerry/AndroidStudioProjects/downloads/StudyAbroadAPP/app/src/main/res/layout/activity_fifth.xml" value="0.10891590678824721" />
+        <entry key="..\:/Users/Jerry/AndroidStudioProjects/downloads/StudyAbroadAPP/app/src/main/res/layout/activity_first.xml" value="0.15760869565217392" />
+        <entry key="..\:/Users/Jerry/AndroidStudioProjects/downloads/StudyAbroadAPP/app/src/main/res/layout/activity_forgot_password.xml" value="0.14990942028985507" />
+        <entry key="..\:/Users/Jerry/AndroidStudioProjects/downloads/StudyAbroadAPP/app/src/main/res/layout/activity_fourth.xml" value="0.15760869565217392" />
+        <entry key="..\:/Users/Jerry/AndroidStudioProjects/downloads/StudyAbroadAPP/app/src/main/res/layout/activity_get_uni.xml" value="0.12931034482758622" />
+        <entry key="..\:/Users/Jerry/AndroidStudioProjects/downloads/StudyAbroadAPP/app/src/main/res/layout/activity_get_uni_programs.xml" value="0.1766304347826087" />
+        <entry key="..\:/Users/Jerry/AndroidStudioProjects/downloads/StudyAbroadAPP/app/src/main/res/layout/activity_login.xml" value="0.14990942028985507" />
+        <entry key="..\:/Users/Jerry/AndroidStudioProjects/downloads/StudyAbroadAPP/app/src/main/res/layout/activity_main.xml" value="0.10891590678824721" />
+        <entry key="..\:/Users/Jerry/AndroidStudioProjects/downloads/StudyAbroadAPP/app/src/main/res/layout/activity_registration.xml" value="0.14990942028985507" />
+        <entry key="..\:/Users/Jerry/AndroidStudioProjects/downloads/StudyAbroadAPP/app/src/main/res/layout/activity_second.xml" value="0.128125" />
+        <entry key="..\:/Users/Jerry/AndroidStudioProjects/downloads/StudyAbroadAPP/app/src/main/res/layout/activity_third.xml" value="0.1" />
+        <entry key="..\:/Users/Jerry/AndroidStudioProjects/downloads/StudyAbroadAPP/app/src/main/res/layout/admitted_profile_categories.xml" value="0.182518115942029" />
+        <entry key="..\:/Users/Jerry/AndroidStudioProjects/downloads/StudyAbroadAPP/app/src/main/res/layout/admitted_profile_engineering.xml" value="0.1546875" />
+        <entry key="..\:/Users/Jerry/AndroidStudioProjects/downloads/StudyAbroadAPP/app/src/main/res/layout/bottom_nav_menu.xml" value="0.15534420289855072" />
+        <entry key="..\:/Users/Jerry/AndroidStudioProjects/downloads/StudyAbroadAPP/app/src/main/res/layout/bottom_navigation.xml" value="0.1078125" />
+        <entry key="..\:/Users/Jerry/AndroidStudioProjects/downloads/StudyAbroadAPP/app/src/main/res/layout/bottom_navigation_view.xml" value="0.1078125" />
+        <entry key="..\:/Users/Jerry/AndroidStudioProjects/downloads/StudyAbroadAPP/app/src/main/res/layout/content_popup.xml" value="0.1721014492753623" />
+        <entry key="..\:/Users/Jerry/AndroidStudioProjects/downloads/StudyAbroadAPP/app/src/main/res/layout/custom_spinner_dropdown_item.xml" value="0.14635416666666667" />
+        <entry key="..\:/Users/Jerry/AndroidStudioProjects/downloads/StudyAbroadAPP/app/src/main/res/layout/custom_spinner_list_item.xml" value="0.14635416666666667" />
+        <entry key="..\:/Users/Jerry/AndroidStudioProjects/downloads/StudyAbroadAPP/app/src/main/res/layout/custom_text_views.xml" value="0.15760869565217392" />
+        <entry key="..\:/Users/Jerry/AndroidStudioProjects/downloads/StudyAbroadAPP/app/src/main/res/layout/custom_textviews.xml" value="0.11822916666666666" />
+        <entry key="..\:/Users/Jerry/AndroidStudioProjects/downloads/StudyAbroadAPP/app/src/main/res/layout/dropdown_item_list.xml" value="0.10989583333333333" />
+        <entry key="..\:/Users/Jerry/AndroidStudioProjects/downloads/StudyAbroadAPP/app/src/main/res/layout/employment_figures_categories.xml" value="0.18177083333333333" />
+        <entry key="..\:/Users/Jerry/AndroidStudioProjects/downloads/StudyAbroadAPP/app/src/main/res/layout/first_activity_display.xml" value="0.17074275362318841" />
+        <entry key="..\:/Users/Jerry/AndroidStudioProjects/downloads/StudyAbroadAPP/app/src/main/res/layout/fragment_decisions.xml" value="0.1721014492753623" />
+        <entry key="..\:/Users/Jerry/AndroidStudioProjects/downloads/StudyAbroadAPP/app/src/main/res/layout/fragment_first.xml" value="0.15534420289855072" />
+        <entry key="..\:/Users/Jerry/AndroidStudioProjects/downloads/StudyAbroadAPP/app/src/main/res/layout/fragment_fourth.xml" value="0.13489583333333333" />
+        <entry key="..\:/Users/Jerry/AndroidStudioProjects/downloads/StudyAbroadAPP/app/src/main/res/layout/fragment_getuni.xml" value="0.18115942028985507" />
+        <entry key="..\:/Users/Jerry/AndroidStudioProjects/downloads/StudyAbroadAPP/app/src/main/res/layout/fragment_profile.xml" value="0.13489583333333333" />
+        <entry key="..\:/Users/Jerry/AndroidStudioProjects/downloads/StudyAbroadAPP/app/src/main/res/layout/fragment_resume.xml" value="0.11510416666666666" />
+        <entry key="..\:/Users/Jerry/AndroidStudioProjects/downloads/StudyAbroadAPP/app/src/main/res/layout/fragment_second.xml" value="0.15534420289855072" />
+        <entry key="..\:/Users/Jerry/AndroidStudioProjects/downloads/StudyAbroadAPP/app/src/main/res/layout/fragment_tab1.xml" value="0.15534420289855072" />
+        <entry key="..\:/Users/Jerry/AndroidStudioProjects/downloads/StudyAbroadAPP/app/src/main/res/layout/fragment_tab2.xml" value="0.15534420289855072" />
+        <entry key="..\:/Users/Jerry/AndroidStudioProjects/downloads/StudyAbroadAPP/app/src/main/res/layout/fragment_tab3.xml" value="0.15534420289855072" />
+        <entry key="..\:/Users/Jerry/AndroidStudioProjects/downloads/StudyAbroadAPP/app/src/main/res/layout/fragment_third.xml" value="0.15534420289855072" />
+        <entry key="..\:/Users/Jerry/AndroidStudioProjects/downloads/StudyAbroadAPP/app/src/main/res/layout/gallery.xml" value="0.14583333333333334" />
+        <entry key="..\:/Users/Jerry/AndroidStudioProjects/downloads/StudyAbroadAPP/app/src/main/res/layout/language_scores.xml" value="0.10778985507246377" />
+        <entry key="..\:/Users/Jerry/AndroidStudioProjects/downloads/StudyAbroadAPP/app/src/main/res/layout/listview.xml" value="0.15760869565217392" />
+        <entry key="..\:/Users/Jerry/AndroidStudioProjects/downloads/StudyAbroadAPP/app/src/main/res/layout/listview_item.xml" value="0.16757246376811594" />
+        <entry key="..\:/Users/Jerry/AndroidStudioProjects/downloads/StudyAbroadAPP/app/src/main/res/layout/loading.xml" value="0.17119565217391305" />
+        <entry key="..\:/Users/Jerry/AndroidStudioProjects/downloads/StudyAbroadAPP/app/src/main/res/layout/loading_circular.xml" value="0.17119565217391305" />
+        <entry key="..\:/Users/Jerry/AndroidStudioProjects/downloads/StudyAbroadAPP/app/src/main/res/layout/loading_linear.xml" value="0.17119565217391305" />
+        <entry key="..\:/Users/Jerry/AndroidStudioProjects/downloads/StudyAbroadAPP/app/src/main/res/layout/main_data_uni.xml" value="0.18115942028985507" />
+        <entry key="..\:/Users/Jerry/AndroidStudioProjects/downloads/StudyAbroadAPP/app/src/main/res/layout/main_toolbar.xml" value="0.21312427409988385" />
+        <entry key="..\:/Users/Jerry/AndroidStudioProjects/downloads/StudyAbroadAPP/app/src/main/res/layout/popular_departments_display.xml" value="0.17074275362318841" />
+        <entry key="..\:/Users/Jerry/AndroidStudioProjects/downloads/StudyAbroadAPP/app/src/main/res/layout/recycler_view.xml" value="0.15534420289855072" />
+        <entry key="..\:/Users/Jerry/AndroidStudioProjects/downloads/StudyAbroadAPP/app/src/main/res/layout/row_item_admit_reject.xml" value="0.18795289855072464" />
+        <entry key="..\:/Users/Jerry/AndroidStudioProjects/downloads/StudyAbroadAPP/app/src/main/res/layout/row_item_comment.xml" value="0.17617753623188406" />
+        <entry key="..\:/Users/Jerry/AndroidStudioProjects/downloads/StudyAbroadAPP/app/src/main/res/layout/row_item_country.xml" value="0.15534420289855072" />
+        <entry key="..\:/Users/Jerry/AndroidStudioProjects/downloads/StudyAbroadAPP/app/src/main/res/layout/row_item_decisions.xml" value="0.10833333333333334" />
+        <entry key="..\:/Users/Jerry/AndroidStudioProjects/downloads/StudyAbroadAPP/app/src/main/res/layout/row_item_decisions_applied.xml" value="0.19927536231884058" />
+        <entry key="..\:/Users/Jerry/AndroidStudioProjects/downloads/StudyAbroadAPP/app/src/main/res/layout/row_item_department.xml" value="0.1503623188405797" />
+        <entry key="..\:/Users/Jerry/AndroidStudioProjects/downloads/StudyAbroadAPP/app/src/main/res/layout/row_item_dicisions.xml" value="0.1721014492753623" />
+        <entry key="..\:/Users/Jerry/AndroidStudioProjects/downloads/StudyAbroadAPP/app/src/main/res/layout/row_item_post.xml" value="0.14635416666666667" />
+        <entry key="..\:/Users/Jerry/AndroidStudioProjects/downloads/StudyAbroadAPP/app/src/main/res/layout/row_item_program.xml" value="0.1503623188405797" />
+        <entry key="..\:/Users/Jerry/AndroidStudioProjects/downloads/StudyAbroadAPP/app/src/main/res/layout/row_item_recent_viewed.xml" value="0.1721014492753623" />
+        <entry key="..\:/Users/Jerry/AndroidStudioProjects/downloads/StudyAbroadAPP/app/src/main/res/layout/row_item_top_uni_top_item.xml" value="0.18795289855072464" />
+        <entry key="..\:/Users/Jerry/AndroidStudioProjects/downloads/StudyAbroadAPP/app/src/main/res/layout/row_item_uni_programs.xml" value="0.1484375" />
+        <entry key="..\:/Users/Jerry/AndroidStudioProjects/downloads/StudyAbroadAPP/app/src/main/res/layout/row_item_uni_searchable.xml" value="0.12447916666666667" />
+        <entry key="..\:/Users/Jerry/AndroidStudioProjects/downloads/StudyAbroadAPP/app/src/main/res/layout/row_item_university.xml" value="0.15534420289855072" />
+        <entry key="..\:/Users/Jerry/AndroidStudioProjects/downloads/StudyAbroadAPP/app/src/main/res/layout/search.xml" value="0.182518115942029" />
+        <entry key="..\:/Users/Jerry/AndroidStudioProjects/downloads/StudyAbroadAPP/app/src/main/res/layout/search_listview.xml" value="0.15760869565217392" />
+        <entry key="..\:/Users/Jerry/AndroidStudioProjects/downloads/StudyAbroadAPP/app/src/main/res/layout/search_selection_item.xml" value="0.17527173913043478" />
+        <entry key="..\:/Users/Jerry/AndroidStudioProjects/downloads/StudyAbroadAPP/app/src/main/res/layout/searchable_items_post.xml" value="0.16666666666666666" />
+        <entry key="..\:/Users/Jerry/AndroidStudioProjects/downloads/StudyAbroadAPP/app/src/main/res/layout/second_fragment.xml" value="0.14635416666666667" />
+        <entry key="..\:/Users/Jerry/AndroidStudioProjects/downloads/StudyAbroadAPP/app/src/main/res/layout/slide_item_container.xml" value="0.16354166666666667" />
+        <entry key="..\:/Users/Jerry/AndroidStudioProjects/downloads/StudyAbroadAPP/app/src/main/res/layout/test_scores.xml" value="0.1671875" />
+        <entry key="..\:/Users/Jerry/AndroidStudioProjects/downloads/StudyAbroadAPP/app/src/main/res/layout/toolbar.xml" value="0.19114583333333332" />
+        <entry key="..\:/Users/Jerry/AndroidStudioProjects/downloads/StudyAbroadAPP/app/src/main/res/layout/top_universities_display.xml" value="0.17074275362318841" />
+        <entry key="..\:/Users/Jerry/AndroidStudioProjects/downloads/StudyAbroadAPP/app/src/main/res/layout/top_universities_display2.xml" value="0.1390625" />
+        <entry key="..\:/Users/Jerry/AndroidStudioProjects/downloads/StudyAbroadAPP/app/src/main/res/layout/uni_categories_fragment.xml" value="0.1484375" />
+        <entry key="..\:/Users/Jerry/AndroidStudioProjects/downloads/StudyAbroadAPP/app/src/main/res/layout/uni_categories_fragment2.xml" value="0.1" />
+        <entry key="..\:/Users/Jerry/AndroidStudioProjects/downloads/StudyAbroadAPP/app/src/main/res/layout/universityPage.xml" value="0.14492753623188406" />
+        <entry key="..\:/Users/Jerry/AndroidStudioProjects/downloads/StudyAbroadAPP/app/src/main/res/layout/university_page.xml" value="0.14492753623188406" />
+        <entry key="..\:/Users/Jerry/AndroidStudioProjects/downloads/StudyAbroadAPP/app/src/main/res/menu/app_bar_search.xml" value="0.22395833333333334" />
+        <entry key="..\:/Users/Jerry/AndroidStudioProjects/downloads/StudyAbroadAPP/app/src/main/res/menu/bottom_nav_menu.xml" value="0.1078125" />
+        <entry key="..\:/Users/Jerry/AndroidStudioProjects/downloads/StudyAbroadAPP/app/src/main/res/menu/menu_navigation.xml" value="0.19427083333333334" />
+        <entry key="..\:/Users/Jerry/AndroidStudioProjects/downloads/StudyAbroadAPP/app/src/main/res/menu/more.xml" value="0.22395833333333334" />
+        <entry key="..\:/Users/Jerry/AndroidStudioProjects/downloads/StudyAbroadAPP/app/src/main/res/menu/profile_toolbar.xml" value="0.125" />
+        <entry key="..\:/Users/Jerry/AndroidStudioProjects/downloads/StudyAbroadAPP/app/src/main/res/menu/search.xml" value="0.22395833333333334" />
+        <entry key="..\:/Users/Jerry/AndroidStudioProjects/downloads/StudyAbroadAPP/app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml" value="0.2361111111111111" />
+        <entry key="..\:/Users/Jerry/Desktop/StudyAbroadAPP/StudyAbroadAPP/app/src/main/res/layout/activity_first.xml" value="0.1707193515704154" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" project-jdk-name="1.8" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
+</project>

@@ -1,0 +1,153 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/home">
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent">
+
+<!--        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="cursive"
+            android:paddingTop="25dp"
+            android:text="Study Abroad"
+            android:textAlignment="center"
+            android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+            android:textColor="@color/white"
+            android:textSize="70dp"
+            android:textStyle="bold" />-->
+
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="350dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/login"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="LOGIN"
+                android:textColor="@color/black"
+                android:textSize="20sp" />
+
+
+            <!--            <TextView
+                android:id="@+id/login"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="20dp"
+                android:fontFamily="sans-serif-black"
+                android:gravity="center"
+                android:text="LOGIN"
+                android:textAlignment="center"
+                android:textColor="@color/colorBlack"
+                android:textSize="18dp"
+                android:textStyle="bold" />-->
+            <!--Widget.MaterialComponents.TextInputLayout.OutlinedBox-->
+            <com.google.android.material.textfield.TextInputLayout
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginVertical="10dp"
+                android:layout_marginLeft="50dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="50dp">
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/etRegAcc"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="User Name"
+                    android:textColorHint="#DDAAAAAA"
+                    android:paddingLeft="20dp" />
+            </com.google.android.material.textfield.TextInputLayout>
+            <com.google.android.material.textfield.TextInputLayout
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginVertical="10dp"
+                android:layout_marginLeft="50dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="50dp">
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/etRegPass"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Password"
+                    android:textColorHint="#DDAAAAAA"
+                    android:paddingLeft="20dp"
+                    app:endIconMode="password_toggle"
+                    android:inputType="textPassword"
+                    app:endIconTint="@color/white"
+                    app:shapeAppearance="@style/Cut"/>
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <!--<TextView
+                android:id="@+id/forgotPassword"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="0dp"
+                android:gravity="center"
+                android:text="Forgot passwoord?"
+                android:textColor="@color/colorBlack"
+                android:textStyle="bold|italic"
+                />-->
+
+            <TextView
+                android:id="@+id/forgotPassword"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="50dp"
+                android:layout_marginTop="0dp"
+                android:text="Forgot password?"
+                android:textColor="@color/black"
+                android:textStyle="italic" />
+
+            <Button
+                android:id="@+id/bRegLogin"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right"
+                android:layout_marginRight="50dp"
+                android:background="@drawable/bg_add_edit_desicions"
+                android:text="Login"
+                android:textColor="@color/white"/>
+
+<!--            <TextView
+                android:id="@+id/tvRegLink"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="30dp"
+                android:gravity="center"
+                android:paddingLeft="20dp"
+                android:text="Don't have account? Sign up"
+                android:textAlignment="center"
+                android:textColor="@color/white"
+                android:textStyle="bold" />-->
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tvRegLink"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="30dp"
+            android:gravity="center"
+            android:paddingLeft="20dp"
+            android:text="Don't have account? Sign up"
+            android:textAlignment="center"
+            android:textColor="@color/light_black"
+            android:paddingBottom="10dp"/>
+    </RelativeLayout>
+</RelativeLayout>

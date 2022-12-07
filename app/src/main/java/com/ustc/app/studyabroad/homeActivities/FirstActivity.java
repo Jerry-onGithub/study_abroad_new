@@ -95,7 +95,7 @@ public class FirstActivity extends AppCompatActivity {
             setTopUniversitiesAdapter();
             checkRadioButtons();
             setRecentlyViewedAdapter();
-            setAdapters();
+            //setAdapters();
 
         }
     }

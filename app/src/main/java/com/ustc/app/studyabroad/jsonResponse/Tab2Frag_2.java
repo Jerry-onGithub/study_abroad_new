@@ -5,8 +5,6 @@ import android.util.Log;
 import com.ustc.app.studyabroad.data.ApiClient;
 import com.ustc.app.studyabroad.data.ApiInterface;
 import com.ustc.app.studyabroad.interfaces.CustomCallback;
-import com.ustc.app.studyabroad.interfaces.CustomCallbackGetUni;
-import com.ustc.app.studyabroad.models.QueryModel;
 import com.ustc.app.studyabroad.models.University;
 
 import org.json.JSONArray;
@@ -22,8 +20,7 @@ public class Tab2Frag_2 {
     public List<University> itemList;
     private ApiInterface apiService;
     private List<University> list;
-
-    QueryModel queryModel = new QueryModel();
+    public List<University> uniList;
 
     public void getResponse(String name, CustomCallback customCallback){
 
@@ -31,15 +28,32 @@ public class Tab2Frag_2 {
         //String c="\"program\"";
         apiService = ApiClient.getClient().create(ApiInterface.class);
         Call<String> call = apiService.programs();
+        Call<String> call2 = apiService.list();
         itemList = new ArrayList<>();
+        uniList = new ArrayList<>();
         call.enqueue(new Callback<String>() {
             @Override
             public void onResponse(Call<String> call, retrofit2.Response<String> response) {
                 if (response.isSuccessful()) {
                     if (response.body() != null) {
-                        String jsonResponse = response.body().toString();
-                        itemList = convertData(jsonResponse, name);
-                        customCallback.onSuccess(itemList);
+                        call2.enqueue(new Callback<String>() {
+                             @Override
+                             public void onResponse(Call<String> call, retrofit2.Response<String> response2) {
+                                 if (response2.isSuccessful()) {
+                                     if (response2.body() != null) {
+                                         String jsonResponse = response.body().toString();
+                                         String jsonResponse2 = response2.body().toString();
+                                         itemList = convertData(jsonResponse, jsonResponse2, name);
+                                         customCallback.onSuccess(itemList);
+                                     }
+                                 }
+                             }
+
+                              @Override
+                              public void onFailure(Call<String> call, Throwable t) {
+
+                              }
+                          });
                     } else {
                         Log.i("RESULT", "EMPTY");
                     }
@@ -56,9 +70,8 @@ public class Tab2Frag_2 {
         });
     }
 
-    private List<University> convertData(String data, String searchName) {
+    private List<University> convertData(String data, String data2, String searchName) {
         list=new ArrayList<>();
-
         try {
             JSONArray arr = new JSONArray(data);
             for (int i=0; i< arr.length(); i++) {
@@ -71,9 +84,29 @@ public class Tab2Frag_2 {
                     if (searchProg(name.toLowerCase(), searchName.toLowerCase())){
                         count+=1;
                         int index = Integer.valueOf(dataObj.getString("index"));
-                        ///get university from list.json at index index
 
-                        Query indexQuery = new Query();
+                        try {
+                            JSONArray arr2 = new JSONArray(data2);
+                            int k = index - 1;
+                            JSONObject dataObj2 = arr2.getJSONObject(k);
+                            String uniName = dataObj2.getString("name");
+                            String address = dataObj2.getString("address");
+                            //String country = dataObj2.getString("country");
+                            //String rank = dataObj2.getString("rank");
+                            String uniIndex = dataObj2.getString("index");
+                            String image = dataObj2.getString("image");
+
+                            University university = new University(uniName, address, image, name, uniIndex);
+                            list.add(university);
+                            //System.out.println(" PROGRAM >>>>>>>>>>>>>>> " + university);
+
+                        } catch (Exception ex) {
+                            ex.printStackTrace();
+                        }
+
+
+                        ///get university from list.json at index index
+                        /*Query indexQuery = new Query();
                         indexQuery.getResponse(index, new CustomCallbackGetUni() {
                             @Override
                             public void onSuccess(University uni) {
@@ -87,15 +120,14 @@ public class Tab2Frag_2 {
                             public void onFailure() {
                                 System.out.println(" onFailure >>>>>>>>>>>>>>> " + index);
                             }
-                        });
+                        });*/
                     }
                 }
             }
-
         } catch (Exception ex) {
             ex.printStackTrace();
         }
-        System.out.println(" LIST SIZE >>>>>>>>>>>>>>> " + list.size());
+        //System.out.println(" LIST SIZE >>>>>>>>>>>>>>> " + list.size());
         return  list;
     }
 

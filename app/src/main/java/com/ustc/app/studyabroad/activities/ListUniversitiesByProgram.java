@@ -48,11 +48,11 @@ public class ListUniversitiesByProgram extends AppCompatActivity {
         rvCategory.setHasFixedSize(true);
         rvCategory.setLayoutManager(new LinearLayoutManager(getApplicationContext()));
 
-        System.out.println("NAME ...................... " + name);
+        //System.out.println("NAME ...................... " + name);
         rs.getResponse(name, new CustomCallback() {
             @Override
             public void onSuccess(List<University> universityList) {
-                System.out.println(" SIZE >>>>>>>>>>>>> ...................... " + universityList.size());
+                //System.out.println(" SIZE >>>>>>>>>>>>> ...................... " + universityList.size());
 
                 progress_bar.setVisibility(View.GONE);
                 universityAdapter = new Tab1Adapter("",true, universityList, getApplicationContext());

@@ -16,13 +16,12 @@
     <uses-permission android:name="android.permission.READ_PHONE_STATE"/>
     <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
     <uses-permission android:name="android.permission.MANAGE_DOCUMENT"/>
-
+    <!--android:label="WWGrad"-->
     <application
         android:allowBackup="true"
         android:icon="@drawable/icon_logo"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
-        android:label="WWGrad"
         android:theme="@style/Theme.StudyAbroadAPP">
         <activity
             android:exported="true"

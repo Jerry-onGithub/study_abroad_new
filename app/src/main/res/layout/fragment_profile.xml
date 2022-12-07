@@ -22,6 +22,7 @@
                 android:elevation="6dp"
                 app:cardCornerRadius="10dp">
                 <LinearLayout
+                    android:background="@color/white"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:orientation="vertical"
@@ -88,6 +89,7 @@
                 android:elevation="6dp"
                 app:cardCornerRadius="10dp">
                 <LinearLayout
+                    android:background="@color/white"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:orientation="vertical"
@@ -200,6 +202,7 @@
                 android:elevation="6dp"
                 app:cardCornerRadius="10dp">
                 <LinearLayout
+                    android:background="@color/white"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:orientation="vertical"
@@ -295,6 +298,7 @@
                 android:elevation="6dp"
                 app:cardCornerRadius="10dp">
                 <LinearLayout
+                    android:background="@color/white"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:orientation="vertical"
@@ -341,6 +345,7 @@
                 android:elevation="6dp"
                 app:cardCornerRadius="10dp">
                 <LinearLayout
+                    android:background="@color/white"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:orientation="vertical"
@@ -388,6 +393,7 @@
                 android:elevation="6dp"
                 app:cardCornerRadius="10dp">
                 <LinearLayout
+                    android:background="@color/white"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:orientation="vertical"

@@ -6,9 +6,10 @@ public class PopularD {
 
     private String name;
     private String index;
-    private List<Category> category;
+    private Category category;
+    //private List<Category> category;
 
-    public PopularD(String name, String index, List<Category> category) {
+    public PopularD(String name, String index, Category category) {//List<Category> category) {
         this.name = name;
         this.index = index;
         this.category = category;
@@ -30,11 +31,18 @@ public class PopularD {
         this.index = index;
     }
 
-    public List<Category> getCategory() {
+    public Category getCategory() {
+        return category;
+    }
+
+    public void setCategory(Category category) {
+        this.category = category;
+    }
+/*    public List<Category> getCategory() {
         return category;
     }
 
     public void setCategory(List<Category> category) {
         this.category = category;
-    }
+    }*/
 }

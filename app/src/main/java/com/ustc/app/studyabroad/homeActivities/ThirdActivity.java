@@ -114,6 +114,8 @@ public class ThirdActivity extends AppCompatActivity implements SearchView.OnQue
         search.getResponse(newText, query, "", new CustomCallback() {
             @Override
             public void onSuccess(List<University> universityList) {
+                Helper.print("RESULT >>>>>>> success");
+                Helper.print("RESULT >>>>>>> SIZE " + universityList.size()); // + "FIRST: " + universityList.get(0));
                 searchViewAdapter = new SearchViewAdapter(ThirdActivity.this, universityList);
                 list.setAdapter(searchViewAdapter);
                 list.setVisibility(View.VISIBLE);
@@ -124,6 +126,7 @@ public class ThirdActivity extends AppCompatActivity implements SearchView.OnQue
             }
             @Override
             public void onFailure() {
+                Helper.print("RESULT >>>>>>> failed");
                 if(newText.equals("")){
                     list.setVisibility(View.GONE);
                 }

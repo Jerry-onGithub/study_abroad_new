@@ -6,7 +6,7 @@ import retrofit2.http.Query;
 
 public interface ApiInterface {
 
-    @GET("getPrograms")
+/*    @GET("getPrograms")
     Call<String> getPrograms(@Query("name") String name, @Query("index") String index);
 
     @GET("search_university")
@@ -28,7 +28,7 @@ public interface ApiInterface {
     Call<String> indexQuery(@Query("i") String filter, @Query("q") String type);
 
     @GET("search")
-    Call<String> searchQuery(@Query("chars") String chars, @Query("q") String query, @Query("country") String country);
+    Call<String> searchQuery(@Query("chars") String chars, @Query("q") String query, @Query("country") String country);*/
 
     @GET("gallery.json")//@GET("getGalleryImages")
     Call<String> getGalleryImages();
@@ -47,5 +47,8 @@ public interface ApiInterface {
 
     @GET("fields.json")//@GET("getGalleryImages")
     Call<String> fields();
+
+    @GET("images_data_five.json")//@GET("getGalleryImages")
+    Call<String> images();
 }
 

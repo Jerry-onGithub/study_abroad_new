@@ -27,7 +27,7 @@ public class GetImage {
         String q="\"img\"";
         System.out.println("NEW NAME >>>>>>>>>>>>>>> " + i + "and" + q);
         apiService = ApiClient.getClient().create(ApiInterface.class);
-        Call<String> call = apiService.indexQuery(i, q);
+        Call<String> call = apiService.images();
         //itemList = new ArrayList<>();
         call.enqueue(new Callback<String>() {
             @Override
@@ -35,7 +35,7 @@ public class GetImage {
                 if (response.isSuccessful()) {
                     if (response.body() != null) {
                         String jsonResponse = response.body().toString();
-                        img = convertData(jsonResponse);
+                        img = convertData(jsonResponse, index);
                         customCallback.onSuccess(img);
                     } else {
                         Log.i("RESULT", "EMPTY");
@@ -53,15 +53,13 @@ public class GetImage {
         });
     }
 
-    private String convertData(String data) {
+    private String convertData(String data, String index) {
         String url = null;
+        int i = Integer.valueOf(index) - 1;
         try {
-            JSONObject obj = new JSONObject(data);
-            if (!obj.optString("body").isEmpty()) {
-                JSONObject dataObj = obj.getJSONObject("body");
-                    url=dataObj.getString("image");
-
-            }
+            JSONArray arr = new JSONArray(data);
+            JSONObject uni = arr.getJSONObject(i);
+            url=uni.getString("image");
         } catch (Exception ex) {
             ex.printStackTrace();
         }

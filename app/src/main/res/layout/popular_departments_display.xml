@@ -45,7 +45,7 @@
                                     android:layout_margin="1dp"
                                     android:elevation="1dp"
                                     app:cardCornerRadius="10dp"
-                                    android:visibility="visible"
+                                    android:visibility="gone"
                                     android:background="@color/white">
                                         <TextView
                                             android:id="@+id/engineering"

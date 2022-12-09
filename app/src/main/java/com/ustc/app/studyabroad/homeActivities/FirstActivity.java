@@ -175,7 +175,6 @@ public class FirstActivity extends AppCompatActivity {
             @Override
             public void onSuccess(List<University> universityList){
                 //Helper.print(">>>>>>>>>>>>>>>>>>>>>>> size of universityList ..............." + universityList.size());
-
                 //progress_bar_top.setVisibility(View.GONE);
                 topUniversitiesAdapter = new TopUniversitiesAdapter(universityList, getApplicationContext());
                 recycler_view_top.setAdapter(topUniversitiesAdapter);
@@ -193,12 +192,15 @@ public class FirstActivity extends AppCompatActivity {
 
     private void setPopularDepartmentsAdapter(String r){
         PopularDepartments pd = new PopularDepartments();
+        Helper.print(">>>>>>>>>>>>>>>>>>>> r ... " + r);
         pd.getResponse(r, new GetPopularDCustomCallback(){
             @Override
             public void onSuccess(List<PopularD> popularDS){
                 Helper.print(">>>>>>>>>>>>>>>>>>>> popularDS "+popularDS.size()+" .....");
+                Helper.print(">>>>>>>>>>>>>>>>>>>> uni name ... "+popularDS.get(0).getName()+" ...cat name... "+popularDS.get(0).getCategory().getCat_name()+" ...content... "+popularDS.get(0).getCategory().getCat_content());
                 popularDepartmentsAdapter = new PopularDepartmentsAdapter(r, popularDS, FirstActivity.this);
                 recycler_view_programs.setAdapter(popularDepartmentsAdapter);
+
                 recycler_view_programs.setLayoutManager(new LinearLayoutManager(getApplicationContext(), LinearLayoutManager.HORIZONTAL, false));
                 SnapHelper snapHelper = new PagerSnapHelper();
                 recycler_view_programs.setOnFlingListener(null);

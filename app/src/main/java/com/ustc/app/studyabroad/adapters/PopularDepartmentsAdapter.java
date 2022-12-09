@@ -34,7 +34,6 @@ public class PopularDepartmentsAdapter extends RecyclerView.Adapter<PopularDepar
     private Context context;
     private List<PopularD> listItem;
     private String chosen;
-    CustomDialog d;
 
     public PopularDepartmentsAdapter(String chosen, List<PopularD> listItem, Context context) {
         this.context = context;
@@ -51,30 +50,29 @@ public class PopularDepartmentsAdapter extends RecyclerView.Adapter<PopularDepar
 
     @Override
     public void onBindViewHolder(@NonNull CardViewHolder cardViewHolder, final int position) {
-        //clearData();
         PopularD item = listItem.get(position);
-
+        Helper.print("CURRENT CATEGORY NAME --- " + item.getCategory().getCat_name());
+        Helper.print("CURRENT UNI NAME --- " + item.getName());
         cardViewHolder.name.setText(item.getName());
-        for(Category c : item.getCategory()){
-            switch (c.getCat_name()){
-                case "engineering":
-                    check(chosen, "engineering", cardViewHolder.engineering, c, cardViewHolder, item.getIndex(), item.getName());
-                    setText(cardViewHolder.engineering, "Engineering", cardViewHolder.ecv);
-                    break;
-                case "business":
-                    check(chosen, "business", cardViewHolder.business, c, cardViewHolder, item.getIndex(), item.getName());
-                    setText(cardViewHolder.business, "Business", cardViewHolder.bcv);
-                    break;
-                case "law":
-                    check(chosen, "law", cardViewHolder.law, c, cardViewHolder, item.getIndex(), item.getName());
-                    setText(cardViewHolder.law, "Law", cardViewHolder.lcv);
-                    break;
-                case "medicine":
-                    check(chosen, "medicine", cardViewHolder.medicine, c, cardViewHolder, item.getIndex(), item.getName());
-                    setText(cardViewHolder.medicine, "Medicine", cardViewHolder.mcv);
-                    break;
-            }
+        switch (item.getCategory().getCat_name()){
+            case "engineering":
+                check(chosen, "engineering", cardViewHolder.engineering, item.getCategory(), cardViewHolder, item.getIndex(), item.getName());
+                setText(cardViewHolder.engineering, "Engineering", cardViewHolder.ecv);
+                break;
+            case "business":
+                check(chosen, "business", cardViewHolder.business, item.getCategory(), cardViewHolder, item.getIndex(), item.getName());
+                setText(cardViewHolder.business, "Business", cardViewHolder.bcv);
+                break;
+            case "law":
+                check(chosen, "law", cardViewHolder.law, item.getCategory(), cardViewHolder, item.getIndex(), item.getName());
+                setText(cardViewHolder.law, "Law", cardViewHolder.lcv);
+                break;
+            case "medicine":
+                check(chosen, "medicine", cardViewHolder.medicine, item.getCategory(), cardViewHolder, item.getIndex(), item.getName());
+                setText(cardViewHolder.medicine, "Medicine", cardViewHolder.mcv);
+                break;
         }
+
 
         cardViewHolder.cardView.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -92,7 +90,6 @@ public class PopularDepartmentsAdapter extends RecyclerView.Adapter<PopularDepar
     private void check(String chosen, String textview, TextView cardViewHolder, Category c, CardViewHolder vh, String index, String name) {
         if(chosen.equals(textview)){
             cardViewHolder.setTextColor(Color.parseColor("#ff008577"));
-            //Helper.print(">>>>>EQUALS "+c.getCat_content());
             String[] words = c.getCat_content().split(" ");
             int n = 20;
             String newString = "";
@@ -101,9 +98,7 @@ public class PopularDepartmentsAdapter extends RecyclerView.Adapter<PopularDepar
                     newString = newString + words[i] + " ";
                 }
             }
-            //Helper.print(">>>>>EQUALS "+newString);
             vh.content.setText(newString + "...");
-
             setOnClick(cardViewHolder, c.getCat_content(), index, name);
             setOnClick(vh.content, c.getCat_content(), index, name);
         }
@@ -140,7 +135,6 @@ public class PopularDepartmentsAdapter extends RecyclerView.Adapter<PopularDepar
                                 intent.putExtra("name", name);
                                 intent.putExtra("img", url);
                                 intent.putExtra("index", i);
-                                //Helper.print(university.getIndex());
                                 intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
                                 context.startActivity(intent);
                             }

@@ -1,15 +1,25 @@
 package com.ustc.app.studyabroad.userActivities;
 
+import android.app.Dialog;
 import android.app.ProgressDialog;
+import android.content.Context;
+import android.content.DialogInterface;
+import android.content.SharedPreferences;
 import android.os.Bundle;
+import android.text.Html;
+import android.text.method.LinkMovementMethod;
 import android.util.Log;
 import android.view.View;
 import android.widget.Button;
+import android.widget.CheckBox;
 import android.widget.EditText;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import androidx.annotation.Nullable;
+import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.fragment.app.DialogFragment;
 
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.FirebaseAuthInvalidCredentialsException;
@@ -24,9 +34,13 @@ public class RegisterActivity extends AppCompatActivity implements View.OnClickL
 
     private FirebaseAuth mAuth;
     private FirebaseFirestore firebaseFirestore;
+    public static final String PREFS = "PREFS";
+    public static final String TERMS_AND_CONDITIONS = "TERMS_AND_CONDITIONS";
+    private Bundle savedInstanceState;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
+        this.savedInstanceState = savedInstanceState;
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_registration);
 
@@ -44,6 +58,23 @@ public class RegisterActivity extends AppCompatActivity implements View.OnClickL
         });
 
         bRegSubmit.setOnClickListener(this);
+    }
+
+    protected void onStart() {
+        super.onStart();
+    }
+    protected void onStop() {
+        super.onStop();
+    }
+    protected void onResume() {
+        super.onResume();
+        SharedPreferences sharedPreferences = getSharedPreferences(PREFS, Context.MODE_PRIVATE);
+        if (sharedPreferences.getBoolean(TERMS_AND_CONDITIONS, false)) {
+            TermsAndConditionsDialogFragment tsandcs = new TermsAndConditionsDialogFragment();
+            Dialog dialog = tsandcs.onCreateDialog(savedInstanceState);
+            dialog.show();
+            ((TextView) dialog.findViewById(android.R.id.message)).setMovementMethod(LinkMovementMethod.getInstance());
+        }
     }
 
     private void startSignIn() {
@@ -148,6 +179,23 @@ public class RegisterActivity extends AppCompatActivity implements View.OnClickL
         int i = v.getId();
         if (i == R.id.regButton) {
             startSignIn();
+        }
+    }
+
+
+    public class TermsAndConditionsDialogFragment extends DialogFragment {
+        public Dialog onCreateDialog(@Nullable Bundle savedInstanceState) {
+            AlertDialog.Builder builder = new AlertDialog.Builder(RegisterActivity.this);
+            builder.setMessage(Html.fromHtml("By using our app, you agree to our <a href='https://pages.flycricket.io/grad-edu/terms.html'> Terms and Conditions </a> and <a href = 'https://pages.flycricket.io/grad-edu/privacy.html'> Privacy Policy </a>")).setPositiveButton("I agree", new DialogInterface.OnClickListener() {
+                @Override
+                public void onClick(DialogInterface dialogInterface, int i) {
+                    SharedPreferences prefs = RegisterActivity.this.getSharedPreferences(PREFS, Context.MODE_PRIVATE);
+                    SharedPreferences.Editor edit = prefs.edit();
+                    edit.putBoolean(TERMS_AND_CONDITIONS, true);
+                    edit.commit();
+                }
+            });
+            return builder.create();
         }
     }
 }
